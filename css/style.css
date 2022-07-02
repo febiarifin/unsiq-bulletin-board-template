@@ -15,9 +15,9 @@ nav {
 /* End Navbar */
 
 /* Content */
-.content {
+/* .content {
     padding-top: 70px;
-}
+} */
 
 .box-header {
     background-color: #0a929e;
@@ -70,6 +70,12 @@ nav {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
+    /* .box-new-post {
+        width: 25%;
+        top: 120px;
+        position: fixed;
+    } */
 }
 
 @media (max-width:800px) {
