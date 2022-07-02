@@ -57,6 +57,18 @@ nav {
     padding: 30px 20px 30px 20px;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    height: 40px;
+    width: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
 /* End Component */
 
 @media (min-width: 1000px) {
@@ -71,11 +83,10 @@ nav {
         padding-bottom: 50px;
     }
 
-    /* .box-new-post {
-        width: 25%;
-        top: 120px;
-        position: fixed;
-    } */
+    .box-new-post {
+        position: sticky;
+        top: 5rem;
+    }
 }
 
 @media (max-width:800px) {

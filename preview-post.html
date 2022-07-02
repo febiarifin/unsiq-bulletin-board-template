@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link fw-semibold active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="#">Menu one</a>
@@ -152,6 +152,10 @@
                                 adipisicing elit. Deserunt eos ipsa earum maiores. Assumenda sint fuga quam quidem
                                 dolore odit alias, neque accusantium beatae eaque. Illum numquam quas ad porro!
                             </p>
+                            <p class="fw-semibold">Lampiran</p>
+                            <hr>
+                            <a href="" class="btn btn-outline-primary btn-sm"><i class="bi bi-paperclip"></i>
+                                https://emaple.com</a>
                         </div>
                     </div>
 
@@ -270,6 +274,35 @@
     </div>
     <!-- End footer -->
 
+    <!-- Back to Top -->
+    <button class="back-to-top btn btn-primary shadow rounded-circle"><i
+            class="bi bi-arrow-up-circle-fill"></i></button>
+
+    <script>
+        const showOnPx = 100;
+        const backToTopButton = document.querySelector(".back-to-top")
+
+        const scrollContainer = () => {
+            return document.documentElement || document.body;
+        };
+
+        document.addEventListener("scroll", () => {
+            if (scrollContainer().scrollTop > showOnPx) {
+                backToTopButton.classList.remove("hidden")
+            } else {
+                backToTopButton.classList.add("hidden")
+            }
+        })
+
+        const goToTop = () => {
+            document.body.scrollIntoView({
+                behavior: "smooth",
+            });
+        };
+
+        backToTopButton.addEventListener("click", goToTop)
+    </script>
+    <!-- End Back to Top -->
 
     <!-- Disquss -->
     <script>
