@@ -1,0 +1,92 @@
+/* Navbar */
+nav {
+    height: 70px;
+}
+
+#link-brand {
+    margin-right: 50px;
+    color: #0a929e;
+}
+
+.active {
+    color: #0a929e !important;
+}
+
+/* End Navbar */
+
+/* Content */
+.content {
+    padding-top: 70px;
+}
+
+.box-header {
+    background-color: #0a929e;
+}
+
+/* End Content */
+
+/* Component */
+.btn {
+    border-radius: 3px !important;
+}
+
+.btn-primary {
+    background-color: #0a929e !important;
+    border: #0a929e !important;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.my-badge {
+    color: #0a929e;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #0a929e;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mylink-primary {
+    color: #0a929e !important;
+    margin-right: 10px;
+}
+
+.login-form {
+    width: 500px;
+    padding: 30px 20px 30px 20px;
+}
+
+/* End Component */
+
+@media (min-width: 1000px) {
+    .active {
+        background-color: #fafafa;
+        border-radius: 5px;
+        color: #0a929e;
+    }
+
+    .box-header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:800px) {
+    .collapse {
+        background-color: #ffffff;
+        padding: 5px 10px 5px 10px;
+        margin-top: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 5px;
+    }
+
+    .box-header {
+        padding-top: 50px !important;
+        padding-bottom: 30px;
+    }
+
+    .card {
+        vertical-align: middle;
+    }
+}
