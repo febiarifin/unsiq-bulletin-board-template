@@ -12,6 +12,10 @@ nav {
     color: #0a929e !important;
 }
 
+.active-dark {
+    color: #ffffff !important;
+}
+
 /* End Navbar */
 
 /* Content */
@@ -86,7 +90,12 @@ nav {
     .active {
         background-color: #fafafa;
         border-radius: 5px;
-        color: #0a929e;
+        color: #ffffff;
+    }
+
+    .active-dark {
+        background-color: #34373b;
+        border-radius: 5px;
     }
 
     .box-header {
@@ -104,7 +113,7 @@ nav {
     .collapse {
         background-color: #ffffff;
         padding: 5px 10px 20px 10px;
-        margin-top: 20px;
+        margin-top: 30px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 5px;
     }

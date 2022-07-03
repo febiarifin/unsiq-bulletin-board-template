@@ -16,6 +16,7 @@ const cardAllPost = document.querySelectorAll(
   ".box-all-post > div > a > .card"
 );
 const formLoginRegister = document.querySelector(".form-login-register");
+const linkActive = document.querySelector(".active");
 
 if (localStorage.getItem("status") === "") {
   localStorage.setItem("status", "Light");
@@ -40,10 +41,13 @@ const setToDark = () => {
 
   navbarCollapse.classList.add("bg-dark", "text-white");
 
+  linkActive.classList.remove("active");
+  linkActive.classList.add("active-dark");
+
   footer.classList.add("dark", "text-white");
 
   content.classList.remove("bg-light");
-  content.classList.add("dark");
+  content.classList.add("dark","text-white");
 
   if (boxContent && boxComment && boxNewPost) {
     boxContent.classList.remove("bg-white");
@@ -80,12 +84,15 @@ const setToLight = () => {
 
   navbarCollapse.classList.remove("bg-dark", "text-white");
 
+  linkActive.classList.remove("active-dark");
+  linkActive.classList.add("active");
+
   content.classList.remove("dark");
   content.classList.add("bg-light");
 
   footer.classList.remove("dark", "text-white");
 
-  content.classList.remove("dark");
+  content.classList.remove("dark","text-white");
   content.classList.add("bg-light");
 
   if (boxContent && boxComment && boxNewPost) {
