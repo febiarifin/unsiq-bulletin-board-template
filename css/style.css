@@ -52,7 +52,7 @@ nav {
     margin-right: 10px;
 }
 
-.login-form {
+.form-login-register {
     width: 500px;
     padding: 30px 20px 30px 20px;
 }
@@ -70,6 +70,17 @@ nav {
 }
 
 /* End Component */
+
+/* Dark mode */
+.dark {
+    background-color: #000000;
+}
+
+.box {
+    background-color: #212529;
+}
+
+/* End Dark mode */
 
 @media (min-width: 1000px) {
     .active {
@@ -92,7 +103,7 @@ nav {
 @media (max-width:800px) {
     .collapse {
         background-color: #ffffff;
-        padding: 5px 10px 5px 10px;
+        padding: 5px 10px 20px 10px;
         margin-top: 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         border-radius: 5px;
@@ -105,5 +116,9 @@ nav {
 
     .card {
         vertical-align: middle;
+    }
+
+    .box-comment {
+        margin-bottom: 2rem;
     }
 }
