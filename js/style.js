@@ -41,13 +41,15 @@ const setToDark = () => {
 
   navbarCollapse.classList.add("bg-dark", "text-white");
 
-  linkActive.classList.remove("active");
-  linkActive.classList.add("active-dark");
+  if (linkActive) {
+    linkActive.classList.remove("active");
+    linkActive.classList.add("active-dark");
+  }
 
   footer.classList.add("dark", "text-white");
 
   content.classList.remove("bg-light");
-  content.classList.add("dark","text-white");
+  content.classList.add("dark", "text-white");
 
   if (boxContent && boxComment && boxNewPost) {
     boxContent.classList.remove("bg-white");
@@ -57,7 +59,7 @@ const setToDark = () => {
     boxComment.classList.add("bg-dark", "text-white");
 
     boxNewPost.classList.remove("bg-white");
-    boxNewPost.classList.add("bg-dark","text-white");
+    boxNewPost.classList.add("bg-dark", "text-white");
   }
 
   if (formLoginRegister) {
@@ -70,12 +72,11 @@ const setToDark = () => {
 
   boxContact.classList.add("bg-dark", "text-white");
 
-//   if (cardNewPost) {
-//     for (i in cardNewPost) {
-//         cardNewPost[i].classList.add("bg-secondary");
-//     }
-//   }
-
+  //   if (cardNewPost) {
+  //     for (i in cardNewPost) {
+  //         cardNewPost[i].classList.add("bg-secondary");
+  //     }
+  //   }
 };
 
 const setToLight = () => {
@@ -84,15 +85,17 @@ const setToLight = () => {
 
   navbarCollapse.classList.remove("bg-dark", "text-white");
 
-  linkActive.classList.remove("active-dark");
-  linkActive.classList.add("active");
+  if (linkActive) {
+    linkActive.classList.remove("active-dark");
+    linkActive.classList.add("active");
+  }
 
   content.classList.remove("dark");
   content.classList.add("bg-light");
 
   footer.classList.remove("dark", "text-white");
 
-  content.classList.remove("dark","text-white");
+  content.classList.remove("dark", "text-white");
   content.classList.add("bg-light");
 
   if (boxContent && boxComment && boxNewPost) {
@@ -116,11 +119,11 @@ const setToLight = () => {
 
   boxContact.classList.remove("bg-dark", "text-white");
 
-//   if (cardNewPost) {
-//     for (i in cardNewPost) {
-//         cardNewPost[i].classList.remove("bg-secondary");
-//     }
-//   }
+  //   if (cardNewPost) {
+  //     for (i in cardNewPost) {
+  //         cardNewPost[i].classList.remove("bg-secondary");
+  //     }
+  //   }
 };
 
 if (localStorage.getItem("status") === "Dark") {
